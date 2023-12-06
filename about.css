@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --black: #272d3b;
+    --red: #fb72ab;
+    --coral: #eeb0af;
+    --pink: #f69c9a;
+    --orange: #FFA500;
+    --gradient: linear-gradient(90deg, var(--red),var(--coral));
+}
+*{
+ font-family: 'Nunito', sans-serif;
+ margin: 0; padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ outline: none; border: none;
+ text-transform: capitalize;
+ transition: all .2s linear;
+} 
+*::selection{
+    background: var(--red);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    color:#fb72ab;
+    text-transform:uppercase;
+    padding-bottom: 3.5rem;
+    font-size:4rem;
+}
+.heading span{
+    color:#FFA500;
+    text-transform:uppercase;
+}
+.about{
+    background-position: left;
+    justify-content: center; 
+    text-align: center;
+}
+.about .content h3{
+    font-size: 4.5rem;
+}
+.about .content p{
+    font-size: 1.5rem;
+}
+
+.about{ 
+
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background: url(about4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .content{
+    max-width: 60rem;
+}
+.about .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:var(--red);
+}
+.about .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:var(--black);
+}
+
+.long .row{
+    display: flex;
+    align-items: center;
+    background: #eeb0af;
+    min-height: 70vh;
+}
+.long .row .image{
+    flex: 1 1 30rem;
+}
+.long .row .image img{
+    width: 100%;
+    font-size:100%;
+
+}
+.long .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.long .row .content h3{
+    font-size: 3rem;
+    color:#fb72ab;
+}
+.long .row .content p{
+    font-size: 1.6rem;
+    color:#fff;
+    padding:1rem 0;
+    line-height:1.8;
+}
+
+.end{ 
+
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background: url(about1.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.end .content{
+    max-width: 60rem;
+}
+.end .content h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:var(--red);
+}
+.end .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding: 1rem 0;
+    color:#fff;
+}
